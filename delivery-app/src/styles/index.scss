@@ -1,0 +1,23 @@
+:root {
+  --color-white: #fff;
+  --color-black: #1f1d2b;
+  --color-bg: #252836;
+  --color-gray: #abbbc2;
+  --color-orange-default: #eb966a;
+  --color-orange-active: #ea7c69;
+        
+  --box-shadow-active: 0 5px 15px rgba(234, 124, 105, 0.32);
+
+  --border-color: #393c49;
+  --border-radius: 5.5px;
+  --border-radius-large: 10px;
+}
+
+body {
+  background-color: var(--color-bg);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+  display: block;
+}

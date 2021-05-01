@@ -1,0 +1,13 @@
+.logo {
+  width: 35px;
+  height: 35px;
+
+  background-color: var(--color-orange-default);
+  opacity: 0.3;
+
+  &__icon {
+    width: 20px;
+    height: 20px;     
+    display: block;
+  }
+}
