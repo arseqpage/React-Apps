@@ -1,8 +1,14 @@
 // import PropTypes from 'prop-types';
 import styles from './Homepage.module.scss';
 
+import Header from '@components/Header';
+
 const Homepage = () => {
-  return <h1>Homepage</h1>;
+  return (
+    <div className="wrapper">
+      <Header />
+    </div>
+  );
 };
 
 // Homepage.propTypes = {
