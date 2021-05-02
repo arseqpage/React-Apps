@@ -7,6 +7,7 @@ const Logo = () => {
     <>
       <div className={styles.logo}>
         <img className={styles.logo__icon} src={logoSvg} alt="Delivery" />
+        <div className="logo__block"></div>
       </div>
     </>
   );
