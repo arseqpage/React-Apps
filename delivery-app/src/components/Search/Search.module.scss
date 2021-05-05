@@ -9,13 +9,13 @@
   border-radius: var(--border-radius);
 
   &__icon {
-    width: 13px;
-    height: 13px;
+    width: 15px;
+    height: 15px;
     margin-right: 5px;
 
     order: 1;
 
-    transition: transform 0.3s, width 0.3s, height 0.3s;
+    transition: transform 0.5s, width 0.5s, height 0.5s;
 
     fill: var(--color-white);
   }

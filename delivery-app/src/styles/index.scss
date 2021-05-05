@@ -7,10 +7,14 @@
   --color-orange-active: #ea7c69;
 
   --box-shadow-active: 0 5px 15px rgba(234, 124, 105, 0.5);
+  --box-shadow-item: 0 5px 20px rgba(31, 29, 43, 0.7);
 
   --border-color: #393c49;
   --border-radius: 5.5px;
-  --border-radius-large: 10px;
+  --border-radius-large: 12px;
+
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
 }
 
 body {
@@ -25,6 +29,8 @@ img {
 }
 
 button {
+  padding: 0;
+
   border: none;
   outline: none;
   background-color: transparent;

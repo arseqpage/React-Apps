@@ -4,7 +4,16 @@ import PropTypes from 'prop-types';
 import styles from './DateInfo.module.scss';
 
 const DateInfo = () => {
-  const [date, setDate] = useState('');
+  const [minutes, setMinutes] = useState(new Date().getMinutes());
+  const [actualDate, setActualDate] = useState();
+
+  const date = new Date();
+  const day = date.getDay();
+  const numDate = date.getDate();
+  const month = date.getMonth();
+  const year = date.getFullYear();
+  const hours = date.getHours();
+
   const days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятника', 'Суббота'];
   const monthNames = [
     'Января',
@@ -22,18 +31,26 @@ const DateInfo = () => {
   ];
 
   useEffect(() => {
-    const date = new Date();
-    const day = date.getDay();
-    const numDate = date.getDate();
-    const month = date.getMonth();
-    const year = date.getFullYear();
+    const interval = setInterval(() => {
+      setMinutes(new Date().getMinutes());
 
-    const fullDate = `${days[day]}, ${numDate} ${monthNames[month]} ${year}`;
+      setActualDate(`${days[day]}, ${numDate} ${monthNames[month]} ${year}, ${hours}:${minutes}`);
+    }, 1000);
 
-    setDate(fullDate);
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
-  return <p className={styles.date}>{date}</p>;
+  if (!actualDate) {
+    return <p className={styles.date}>Получаем дату...</p>;
+  }
+
+  return (
+    <>
+      <p className={styles.date}>{actualDate}</p>
+    </>
+  );
 };
 
 Date.propTypes = {

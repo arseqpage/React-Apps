@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import clsx from 'classnames';
+
 import styles from './Search.module.scss';
 
 import { ReactComponent as SearchIcon } from './img/search.svg';
@@ -20,7 +22,7 @@ const Search = () => {
         onChange={handleSearchChange}
         placeholder="Найти любимое блюдо..."
       />
-      <SearchIcon className={styles.search__icon} />
+      <SearchIcon className={clsx(styles.search__icon)} />
     </label>
   );
 };
