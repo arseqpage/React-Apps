@@ -1,16 +1,22 @@
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import clsx from 'classnames';
+import PropTypes, { func } from 'prop-types';
 
-import PropTypes from 'prop-types';
+import { setCategory } from '@store/actions/filtersAction';
 import styles from './FoodCategory.module.scss';
 
 const FoodCategory = () => {
-  const [activeBtn, setActiveBtn] = useState(0);
-  const categories = ['Холодное', 'Горячее', 'Супы', 'Десерты'];
+  const dispatch = useDispatch();
 
-  function handleActiveBtn(i) {
+  const [activeBtn, setActiveBtn] = useState(0);
+  const categories = ['Все', 'Холодное', 'Горячее', 'Супы', 'Десерты'];
+
+  const changeByCategory = (category, i) => {
     setActiveBtn(i);
-  }
+
+    dispatch(setCategory(category));
+  };
 
   return (
     <>
@@ -29,7 +35,7 @@ const FoodCategory = () => {
                   activeBtn === i && styles.categories__btn_active,
                 )}
                 id={i}
-                onClick={() => handleActiveBtn(i)}>
+                onClick={() => changeByCategory(category, i)}>
                 {category}
               </button>
             </li>
