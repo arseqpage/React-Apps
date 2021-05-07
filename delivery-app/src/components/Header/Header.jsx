@@ -4,7 +4,7 @@ import styles from './Header.module.scss';
 import Name from '@components/Name';
 import DateInfo from '@components/DateInfo';
 import Search from '@components/Search';
-import FoodCategory from '@components/FoodCategory';
+
 
 const Header = () => {
   return (
@@ -19,7 +19,7 @@ const Header = () => {
         </div>
       </div>
 
-      <FoodCategory />
+      
     </header>
   );
 };

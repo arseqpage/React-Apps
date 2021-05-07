@@ -1,0 +1,40 @@
+.time {
+  padding: 10px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  color: var(--color-white);
+
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+
+  &__value {
+    display: flex;
+
+    cursor: pointer;
+  }
+
+  &__arrow {
+    margin-right: 6px;
+
+    &.show {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__items {
+    display: none;
+
+    &.show {
+      display: block;
+    }
+  }
+
+  &__item {
+    padding: 5px 0;
+
+    cursor: pointer;
+  }
+}

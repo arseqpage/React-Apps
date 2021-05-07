@@ -1,8 +1,6 @@
 const initialState = {
   category: null,
-  sortBy: {
-    type: 'Завтрак',
-  },
+  time: 'Завтрак',
 };
 
 const filtersReducer = (state = initialState, action) => {
@@ -15,7 +13,7 @@ const filtersReducer = (state = initialState, action) => {
     case 'SET_SORT_BY':
       return {
         ...state,
-        sortBy: action.payload,
+        time: action.payload,
       };
 
     default:

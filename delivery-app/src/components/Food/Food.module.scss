@@ -1,4 +1,18 @@
 .food {
+  &__choose {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+  }
+
+  &__choosing {
+    color: var(--color-white);
+    font-size: var(--font-size-lg);
+  }
+
   &__items {
     padding-top: 100px;
     display: grid;
