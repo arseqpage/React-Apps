@@ -12,7 +12,7 @@ const FoodTime = () => {
   const dispatch = useDispatch();
   const [type, setType] = useState(0);
   const [showFilters, setShowFilters] = useState(false);
-  const typeFilters = ['Завтрак', 'Обед', 'Ужин'];
+  const typeFilters = ['В ресторане', 'С собой', 'Заказать'];
   const timeRef = useRef();
 
   useEffect(() => {
