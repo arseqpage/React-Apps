@@ -1,0 +1,19 @@
+.subheader {
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-column-gap: 20px;
+
+  color: var(--color-white);
+  font-weight: var(--font-bold);
+
+  border-bottom: 1px solid rgba(#abbbc2, 0.3);
+
+  &__qtty {
+    text-align: center;
+  }
+
+  &__price {
+    text-align: right;
+  }
+}

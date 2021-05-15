@@ -13,15 +13,20 @@
   --border-radius: 5.5px;
   --border-radius-large: 12px;
 
+  --font-size-u-sm: 12px;
   --font-size-sm: 14px;
   --font-size-md: 16px;
   --font-size-lg: 24px;
+
+  --font-bold: 600;
 }
 
 body {
   margin: 0;
   padding: 0;
+
   background-color: var(--color-bg);
+
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -32,25 +37,36 @@ img {
 button {
   padding: 0;
 
-  border: none;
   outline: none;
+
+  border: none;
   background-color: transparent;
 }
 
 ul {
   margin: 0;
   padding: 0;
+
   list-style-type: none;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+
   color: var(--color-white);
 }
 
 input {
-  border: none;
-  background: transparent;
-  outline: none;
   padding: 0;
   margin: 0;
+
+  outline: none;
+
+  border: none;
+  background: transparent;
 }

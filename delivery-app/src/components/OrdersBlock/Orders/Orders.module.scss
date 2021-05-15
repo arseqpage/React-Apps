@@ -1,0 +1,37 @@
+.order {
+  padding: 15px;
+
+  border-radius: var(--border-radius);
+  background-color: var(--color-black);
+
+  &__filter {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__btn {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__header {
+    padding: 20px 0;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+
+    color: var(--color-white);
+  }
+
+  &__items {
+    padding-top: 20px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

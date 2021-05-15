@@ -1,0 +1,40 @@
+.info {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-column-gap: 20px;
+
+  &__food {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    color: var(--color-white);
+    font-size: var(--font-size-sm);
+  }
+
+  &__price {
+    color: var(--color-gray);
+    font-size: var(--font-size-u-sm);
+  }
+
+  &__summ {
+    color: var(--color-white);
+    text-align: right;
+  }
+}

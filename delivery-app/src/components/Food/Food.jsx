@@ -33,7 +33,7 @@ const Food = () => {
       <div className={styles.food__filters}>
         <FoodCategory />
         <div className={styles.food__choose}>
-          <span className={styles.food__choosing}>Choose Dishes</span>
+          <span className={styles.food__choosing}>Выберите блюдо</span>
           <FoodTime />
         </div>
       </div>
