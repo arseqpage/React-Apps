@@ -1,0 +1,4 @@
+export const SET_SORT_BY = 'SET_SORT_BY';
+export const SET_CATEGORY_BY = 'SET_CATEGORY_BY';
+export const ADD_FOOD_TO_CART = 'ADD_FOOD_TO_CART';
+export const REMOVE_FOOD_FROM_CART = 'REMOVE_FOOD_FROM_CART';

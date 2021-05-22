@@ -1,3 +1,5 @@
+import { SET_SORT_BY, SET_CATEGORY_BY } from '@store/constants/actionTypes';
+
 export const setSortBy = (time) => ({
   type: 'SET_SORT_BY',
   payload: time,
