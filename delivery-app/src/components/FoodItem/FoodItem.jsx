@@ -4,6 +4,8 @@ import styles from './FoodItem.module.scss';
 import UiAddItem from '@ui/UiAddItem';
 
 const FoodItem = ({ image, desc, price, handleAddItem }) => {
+
+  
   return (
     <div className={styles.item}>
       <img className={styles.item__img} src={image} alt={desc} />

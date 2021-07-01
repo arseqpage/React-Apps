@@ -17,8 +17,6 @@ import { ReactComponent as StatisticsIcon } from './img/Statistics.svg';
 const Navbar = () => {
   const path = useLocation().pathname;
 
-  console.log(path);
-
   const homePath = path === '/';
   const discountsPath = path === '/discounts';
   const messagesPath = path === '/messages';

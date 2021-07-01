@@ -1,13 +1,14 @@
 // import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 import UiButton from '@components/UI/UiButton';
 import OrdersInfo from '@components/OrdersBlock/OrdersItem/OrdersInfo';
 import OrderSubheader from '@components/OrdersBlock/OrdersSubheader';
 
-import items from '@api';
 import styles from './Orders.module.scss';
 
 const Orders = ({ orderNumber = 44 }) => {
-  console.log(items);
+  const itemsOrder = useSelector((store) => store.cartReducer);
+  console.log(itemsOrder);
 
   const handleChooseType = () => {
     console.log('1');
@@ -43,14 +44,15 @@ const Orders = ({ orderNumber = 44 }) => {
         </div>
         <OrderSubheader />
         <div className={styles.order__items}>
-          {items &&
-            items.map((item, i) => (
+          {itemsOrder &&
+            itemsOrder.map((item, i) => (
               <OrdersInfo
                 classes={styles.order__item}
-                text={item.desc}
+                text={item.name}
                 img={item.image}
                 price={+item.price}
                 key={`${item.price}_${i}`}
+                j
               />
             ))}
         </div>
